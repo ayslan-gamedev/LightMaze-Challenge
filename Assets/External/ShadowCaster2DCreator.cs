@@ -30,7 +30,7 @@ public class ShadowCaster2DCreator : MonoBehaviour
 		{
 			Vector2[] pathVertices = new Vector2[tilemapCollider.GetPathPointCount(i)];
 			tilemapCollider.GetPath(i, pathVertices);
-			GameObject shadowCaster = new GameObject("shadow_caster_" + i);
+			GameObject shadowCaster = new("shadow_caster_" + i);
 			shadowCaster.transform.parent = gameObject.transform;
 			ShadowCaster2D shadowCasterComponent = shadowCaster.AddComponent<ShadowCaster2D>();
 			shadowCasterComponent.selfShadows = this.selfShadows;
