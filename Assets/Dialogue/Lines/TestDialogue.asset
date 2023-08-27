@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0620996b97cefb741b3df135dfdc3f82, type: 3}
+  m_Name: TestDialogue
+  m_EditorClassIdentifier: 
+  SpeakerProtait: {fileID: -1527315960, guid: 674466e7ddbab764cb02a11a85e02419, type: 3}
+  Speaker: TEST SPEAKER
+  textDialogue:
+  - LOREM IPSUM IS DOLOR SIT AMET
+  - aaa
+  - bb
+  - cc
+  choices:
+  - textChoices: A
+    nextDialogue: {fileID: 11400000}
+  - textChoices: B
+    nextDialogue: {fileID: 11400000, guid: 08bf3a9f0aaf50f42b2949ab0e6c5006, type: 2}
