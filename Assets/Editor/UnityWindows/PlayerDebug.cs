@@ -16,31 +16,31 @@ public class PlayerDebug : EditorWindow
 
     }
 
-    void OnGUI()
-    {
+    //void OnGUI()
+    //{
 
 
-        //if(playerMovement != null)
-        //{
-        //    playerAtributts = playerMovement.PlayerAtributts; // Obtenha as constantes do PlayerMovement
+    //    //if(playerMovement != null)
+    //    //{
+    //    //    playerAtributts = playerMovement.PlayerAtributts; // Obtenha as constantes do PlayerMovement
 
-        //    GUILayout.Label("Informações do Jogador:", EditorStyles.boldLabel);
+    //    //    GUILayout.Label("Informações do Jogador:", EditorStyles.boldLabel);
 
-        //    // Mostrar a velocidade atual
-        //    GUILayout.Label("Velocidade Atual: " + playerMovement.CurrentSpeed);
+    //    //    // Mostrar a velocidade atual
+    //    //    GUILayout.Label("Velocidade Atual: " + playerMovement.CurrentSpeed);
 
-        //    // Mostrar as constantes
-        //    GUILayout.Label("Constantes:");
-        //    GUILayout.Label("Velocidade: " + playerAtributts.speed);
-        //    GUILayout.Label("Aceleração: " + playerAtributts.aceletarion);
-        //    GUILayout.Label("Desaceleração: " + playerAtributts.slowdown);
-        //}
-        //else
-        //{
-        //    GUILayout.Label("Script PlayerMovement não encontrado na cena.", EditorStyles.boldLabel);
-        //    playerMovement = FindObjectOfType<PlayerMovement>(); // Procure o objeto com o script PlayerMovement
-        //}
-    }
+    //    //    // Mostrar as constantes
+    //    //    GUILayout.Label("Constantes:");
+    //    //    GUILayout.Label("Velocidade: " + playerAtributts.speed);
+    //    //    GUILayout.Label("Aceleração: " + playerAtributts.aceletarion);
+    //    //    GUILayout.Label("Desaceleração: " + playerAtributts.slowdown);
+    //    //}
+    //    //else
+    //    //{
+    //    //    GUILayout.Label("Script PlayerMovement não encontrado na cena.", EditorStyles.boldLabel);
+    //    //    playerMovement = FindObjectOfType<PlayerMovement>(); // Procure o objeto com o script PlayerMovement
+    //    //}
+    //}
 
 }
 #endif
