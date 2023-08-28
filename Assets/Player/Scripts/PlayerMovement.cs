@@ -1,53 +1,54 @@
 using UnityEngine;
-using Unity.Mathematics;
-using TMPro;
-using System;
+using MazeLabirint;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Collider2D))]
 public class PlayerMovement : MonoBehaviour
 {
-    private Rigidbody2D RigidBody2d;
+    private Rigidbody2D rigidBody2D;
 
-    [SerializeField] private PlayerAtributts playerAtributts;
-
-    public PlayerAtributts PlayerAtributts => playerAtributts;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        RigidBody2d = GetComponent<Rigidbody2D>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        MovePlayer();
-    }
+    [SerializeField] private PlayerAttributes playerAttributes;
 
     private Vector2 persistentDirection;
-    public float CurrentSpeed;
+    private float currentSpeed;
 
-    private void MovePlayer()
+#if UNITY_EDITOR
+    [SerializeField] private float CurrentSpeed_DEGUG;
+#endif
+
+    private void Start()
     {
+        // Get the Rigidbody2D component associated with this object
+        rigidBody2D = GetComponent<Rigidbody2D>();
+
+        // Find the GameManager and get the player attributes from it
+        GameManager gameManager = FindAnyObjectByType<GameManager>();
+        if(gameManager != null && gameManager.GlobalVariables != null)
+        {
+            playerAttributes = gameManager.GlobalVariables.PlayerAttributes;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        // Get the player's Horizontal and Vertical axis inputs
         Vector2 arrowsDirections = new(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-        CurrentSpeed = arrowsDirections != Vector2.zero ? CurrentSpeed += playerAtributts.aceletarion : CurrentSpeed -= playerAtributts.slowdown;
+        // Calculate the current player speed based on inputs and attributes
+        currentSpeed = arrowsDirections != Vector2.zero ? currentSpeed + playerAttributes.acceleration * Time.deltaTime : currentSpeed - playerAttributes.slowdown * Time.deltaTime;
+        currentSpeed = Mathf.Clamp(currentSpeed, 0, playerAttributes.speed);
 
-        CurrentSpeed = math.clamp(CurrentSpeed, 0, playerAtributts.speed);
-
+        // Update the persistent direction of the player
         if(arrowsDirections != Vector2.zero)
         {
             persistentDirection = arrowsDirections;
         }
 
-        RigidBody2d.velocity = persistentDirection * CurrentSpeed;
-    }
-}
+        // Apply the velocity to the Rigidbody2D to move the player
+        rigidBody2D.velocity = persistentDirection * currentSpeed;
 
-[System.Serializable]
-public struct PlayerAtributts {
-    public float speed;
-    public float aceletarion;
-    public float slowdown;
+#if UNITY_EDITOR
+        CurrentSpeed_DEGUG = currentSpeed;
+#endif
+    }
 }
