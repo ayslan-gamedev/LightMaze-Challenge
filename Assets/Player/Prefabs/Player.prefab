@@ -256,11 +256,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef1e970e745394846819991d8eb17fd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerAtributts:
-    speed: 7
-    aceletarion: 0.81
-    slowdown: 0.56
-  CurrentSpeed: 0
+  playerAttributes:
+    speed: 6
+    acceleration: 20
+    slowdown: 25
+  CurrentSpeed_DEGUG: 0
 --- !u!114 &2702101053977410054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,7 +287,7 @@ MonoBehaviour:
   - {x: 0.5, y: -0.49999994, z: 0}
   m_ShapePathHash: 0
   m_Mesh: {fileID: 0}
-  m_InstanceId: -123130
+  m_InstanceId: -727736
   m_LocalBounds:
     m_Center: {x: 0, y: 0.000000029802322, z: 0}
     m_Extent: {x: 0.5, y: 0.49999997, z: 0}
