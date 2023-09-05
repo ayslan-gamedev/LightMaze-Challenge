@@ -1,51 +1,71 @@
-# 🎮🐱🐾 CatCity Accessibility Updates 🎮🐱🐾
+# 💡 LightMaze-Challenge 🎮
+![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/ayslan-gamedev/LightMaze-Challenge/main?color=blue&style=flat-square)
+<a href="https://github.com/Ayslan-gamedev/LightMaze-Challenge/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ayslan-gamedev/LightMaze-Challenge?color=red&style=flat-square"></a>
 
-This repository contains accessibility updates for the CatCity game by Instal Entertainment. These updates have been implemented directly in the base game to enhance accessibility for all players.
+![Game Screenshot](screenshot.png)
 
-## 🌟 Accessibility Features
+## 📖 Description
 
-The updates will be described here, and you can track the project's progress at: [CatCityAccessibilityPack/Project](https://github.com/users/ayslan-gamedev/projects/4)
+Welcome to **Labirinto de Luz** (Labyrinth of Light), a game created as part of a coding challenge. In this unique adventure, you find yourself in a mysterious and immersive dark maze filled with intrigue. Your objective is to navigate through the labyrinth and collect all the radiant light sources scattered throughout its intricate pathways.
 
-## 📋 How to Use
+**The Challenge:** This project was born out of a coding challenge proposed by my friend **Opuiguim 10**. The challenge was to create a complete game within the tight timeframe of just two hours. The goal was not only to build an engaging game but also to demonstrate the capabilities of rapid development and problem-solving.
 
-The accessibility updates are integrated into the CatCity game. Simply update the game to access these enhanced features.
+**The Gameplay:** As you venture deeper into the maze, your primary objective is to gather every shining light source you come across. These sources not only illuminate your path but also provide precious additional time. However, beware! The maze is fraught with cunning obstacles and menacing enemies that will do everything in their power to extinguish your light sources and thwart your progress.
 
-## 🤝 Contributions
+**A Race Against Time:** The clock is ticking, and you must make quick decisions to outwit the challenges that lie in your path. Your ultimate aim is to conquer the labyrinth, collecting all the light sources, and reach the exit before time runs out.
 
-We appreciate your interest in contributing to CatCity's accessibility. You can contribute in various ways:
+Are you up for the challenge? Dive into **Labirinto de Luz** and test your skills in this thrilling game of strategy, speed, and cunning. Enjoy the adventure and embrace the opportunity to witness the creative process behind a game developed in just two hours. Thank you for joining us on this journey into the *Labyrinth of Light*!
 
-### 🐞 Found a Problem or Bug?
+## 🕹 How to Play
 
-If you've identified an accessibility-related issue or bug, please [open a new issue](https://github.com/ayslan-gamedev/CatCityAccessibilityPack/issues) describing the problem in detail, including steps to reproduce.
+- Use the arrow keys to move the character.
+- Collect the light sources to extend the time.
+- Avoid obstacles and enemies that can extinguish your light sources.
+- Complete the maze before time runs out to win!
 
-### 🛠️ Want to Add New Accessibility Features?
+## ⚖ License
 
-If you want to add new accessibility features to CatCity, follow these steps:
-1. [Fork this repository](https://github.com/ayslan-gamedev/CatCityAccessibilityPack/fork) to your account.
-2. Create a new branch with a descriptive name: `git checkout -b new-feature`.
-3. Develop and test your features.
-4. Submit a pull request to the main repository, describing your changes and the benefits of adding the new features.
+This project is released under the [Creative Commons Zero v1.0 Universal (CC0 1.0 Universal) License](LICENSE).
 
-### 📖 Want to Help with Documentation?
+## 🥂 How to Contribute
 
-If you want to improve the documentation of this project, feel free to open a pull request with your changes or suggestions.
+Contributions are welcome! If you'd like to contribute to "Labirinto de Luz," follow these steps:
 
-## 📜 Contribution Guidelines
+1. **Fork** the repository: Click the "Fork" button at the top right of this repository's page. This will create a copy of the repository under your GitHub account.
 
-To maintain a collaborative and productive environment, please follow these guidelines when contributing to the project:
+2. **Clone** your fork: Clone the repository from your GitHub account to your local machine using Git. Replace `[your-username]` with your GitHub username.
 
-- Be respectful and courteous to other contributors.
-- Ensure your contributions align with accessibility standards.
-- Document your changes clearly and concisely.
-- Test your changes to ensure they function as expected.
+   - Click the "Code" button at the top right of the repository's page.
+   - Copy the repository URL.
+   - Open your terminal or command prompt.
+   - Navigate to the directory where you want to clone the repository.
+   - Use the following command to clone the repository, replacing `[your-username]` with your GitHub username:
 
-## 📄 License
+     ```bash
+     git clone https://github.com/[your-username]/Labirinto-de-Luz.git
+     ```
 
-This project is licensed under the [GNU General Public License, version 3.0 (GPL-3.0)](LICENSE).
+3. Open the Unity project in your preferred IDE.
+4. Make your own alterations.
+5. Commit your changes with descriptive messages.
 
-Be sure to read and understand the terms of the license before using, modifying, or contributing to this project.
+6. **Create a Pull Request (PR):** When you're ready to contribute your changes back to the original repository, follow these steps:
+   - Push your changes to your forked repository on GitHub using the following commands:
+     ```bash
+     git add .
+     git commit -m "Describe your changes here"
+     git push origin main
+     ```
+   - Visit the original repository on GitHub, and you should see a "Compare & pull request" button. Click it.
+   - Describe your changes in the pull request message and submit it.
+Now your contribution will be reviewed and considered for inclusion in the main project. Thank you for contributing to "Labirinto de Luz"!
+# 🐱‍👤 Acknowledgments
+I would like to thank [Opuiguim 10](https://github.com/JoaoVitorF) for proposing the challenge and inspiring this project.
+# 🌟 Final Words
+> "Every great developer you know got there by solving problems they were unqualified to solve until they did it." — Patrick McKenzie
+Thank you for visiting "LightMaze Challenge"! Enjoy the game and happy coding!
 
 <p align="right">
-<br>Enjoy CatCity with enhanced accessibility! 🎉<br>Thank you for visiting, happy coding! 🚀<br>
+<br>Thank you for visiting, happy coding!<br>
 Ayslan-gamedev
 </p>
