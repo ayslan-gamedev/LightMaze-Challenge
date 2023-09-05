@@ -2,7 +2,7 @@
 ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/ayslan-gamedev/LightMaze-Challenge/main?color=blue&style=flat-square)
 <a href="https://github.com/Ayslan-gamedev/LightMaze-Challenge/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ayslan-gamedev/LightMaze-Challenge?color=red&style=flat-square"></a>
 
-![Game Screenshot](screenshot.png)
+<!-- ![Game Screenshot](screenshot.png) -->
 
 ## 📖 Description
 
